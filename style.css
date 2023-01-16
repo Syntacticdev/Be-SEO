@@ -12,8 +12,7 @@ html {
 
 body {
     font-family: 'Saira Semi Condensed', sans-serif;
-
-
+    position: relative;
 }
 
 header {
