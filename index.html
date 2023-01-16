@@ -262,12 +262,9 @@
             const scrolltoTopBtn = document.querySelector(".scroll-to-top")
             window.addEventListener("scroll", () => {
                 if (document.body.scrollTop > 140 || document.documentElement.scrollTop > 140) {
-                    header.style.position = "sticky";
-                    header.style.top = 0 + 'px'
-                    header.style.color = "#fff"
+                    header.classList.add("sticktop")
                 } else {
-                    header.style.position = 'static';
-
+                    header.classList.remove("sticktop")
                 }
             })
             scrolltoTopBtn.addEventListener("click", () => {
